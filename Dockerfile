@@ -27,4 +27,4 @@ WORKDIR /home/emulator
 
 RUN echo "no" | avdmanager create avd -f -k $ANDROID_PACKAGE -n test -b google_apis/armeabi-v7a
 
-ENTRYPOINT ["emulator64-arm", "-avd test", "-noaudio", "-no-window", "-ranchu", "-gpu off", "-verbose"]
+ENTRYPOINT ["emulator64-arm", "-avd", "test", "-noaudio", "-no-window", "-ranchu", "-gpu", "off", "-verbose"]
